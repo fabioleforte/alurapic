@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule} from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { FotoModule } from './foto/foto.module';
@@ -19,14 +19,15 @@ import { routing } from './app.routes';
         FormsModule,
         HttpModule,
         PainelModule,
-        routing
+        routing,
+        ReactiveFormsModule
     ],
     declarations: [
-        AppComponent, 
-        CadastroComponent, 
+        AppComponent,
+        CadastroComponent,
         ListagemComponent
     ],
-    bootstrap: [AppComponent]
+    bootstrap: [ AppComponent ]
 
 })
 export class AppModule { }
